@@ -1,5 +1,7 @@
 # Hyper-personalised Agent
 
+### 29-05-2026 - [Supernote -> JournalPT](./supernote-to-hyper-personalised-agent.md)
+
 ## Installation
 
 ### macOS
