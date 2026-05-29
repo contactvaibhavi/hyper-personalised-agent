@@ -1,4 +1,4 @@
-# JournalPT
+# Hyper-personalised Agent
 
 ## Installation
 
