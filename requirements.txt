@@ -45,7 +45,7 @@ packaging==24.1
 pgvector==0.3.6
 pluggy==1.5.0
 propcache==0.2.0
-psycopg2==2.9.10
+psycopg2-binary==2.9.12
 pydantic==2.9.2
 pydantic-extra-types==2.9.0
 pydantic-settings==2.6.1
