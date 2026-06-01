@@ -1,4 +1,6 @@
 __pycache__
 .env
 env
-.DS_Store
+.DS_Storetests/
+tests/*.jpeg
+*.jpeg

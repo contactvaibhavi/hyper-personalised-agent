@@ -3,9 +3,11 @@ from fastapi import FastAPI
 import uvicorn
 from api.router import router
 from dotenv import load_dotenv
-from services.db import init_db, engine
 
 load_dotenv()
+
+from services.db import init_db, engine
+
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -15,8 +17,18 @@ async def lifespan(app: FastAPI):
     yield
     print("close")
 
+
 app = FastAPI(lifespan=lifespan)
 app.include_router(router, prefix="/api")
+
+from services.db import DbSession
+
+
+@app.middleware("http")
+async def db_session_middleware(request, call_next):
+    response = await call_next(request)
+    DbSession.remove()
+    return response
 
 
 @app.get("/")
