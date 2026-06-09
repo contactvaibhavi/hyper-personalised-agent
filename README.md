@@ -1,7 +1,7 @@
 # Hyper-personalised Agent
 
-### 02-06 - [Journals ingestion](./supernote-to-hyper-personalised-agent.md)
-### 03-06-2026 - [Pattern-Trigger](./pattern-trigger.md)
+### 06 - [Journals ingestion](./docs/supernote-to-hyper-personalised-agent.md)
+### 06 - [Pattern-Trigger](./docs/pattern-trigger.md)
 
 ## Installation
 
